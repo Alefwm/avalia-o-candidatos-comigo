@@ -1,0 +1,65 @@
+/* Estiliza o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f9a6b;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estiliza o contêiner do formulário */
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    box-shadow: 1px 1px 10px 1px;
+}
+
+/* Estiliza o título */
+h1 {
+    text-align: center;
+}
+
+/* Estiliza o formulário para que os elementos fiquem organizados verticalmente */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Define o espaçamento e a aparência dos campos de formulário */
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea, select, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 90%;
+}
+
+/* Estiliza o botão de envio */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Altera a cor do botão ao passar o mouse */
+button:hover {
+    background-color: #155d24;
+}
+
+/* Estiliza a área onde será exibida a resposta */
+#response {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+}

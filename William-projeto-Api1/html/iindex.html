@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Ticket</title>
+    <!-- Link para o arquivo CSS que estiliza a página -->
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <!-- Container que centraliza o formulário -->
+    <div class="form-container">
+        <!-- Título do formulário -->
+        <h1>Cadastro de Ticket</h1>
+
+        <!-- Formulário para cadastro de ticket -->
+        <form id="ticket-form">
+            <!-- Campo de texto para o título do ticket -->
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" placeholder="Digite o título do ticket" required>
+
+            <!-- Área de texto para a descrição do ticket -->
+            <label for="description">Descrição:</label>
+            <textarea id="description" name="description" placeholder="Descreva o problema" required></textarea>
+
+            <!-- Campo select para a prioridade do ticket -->
+            <label for="priority">Prioridade:</label>
+            <select id="priority" name="priority" required>
+                <option value="">Selecione</option>
+                <option value="alta">Alta</option>
+                <option value="média">Média</option>
+                <option value="baixa">Baixa</option>
+            </select>
+
+            <!-- Botão de envio do formulário -->
+            <button type="submit">Cadastrar Ticket</button>
+        </form>
+
+        <!-- Área onde será exibida a resposta (mensagem de erro ou sucesso) -->
+        <div id="response"></div>
+    </div>
+
+    <!-- Script JavaScript para lidar com o envio do formulário -->
+    <script src="/js/index.js"></script>
+</body>
+</html>
